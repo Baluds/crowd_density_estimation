@@ -30,4 +30,4 @@ def extract_frames(video_path, output_folder, interval_seconds=1):
     video_capture.release()
     print("Frame extraction completed.")
 
-extract_frames('Input/trial.mp4', 'Output', 5)
+extract_frames('vidtoimg/Input/trial.mp4', 'vidtoimg/Output', 5)
