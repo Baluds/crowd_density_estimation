@@ -37,13 +37,14 @@ def event_triggered_sampling_and_saving(video_path, output_dir, flow_threshold=1
             # Save the frame as an image
             image_path = os.path.join(output_dir, f"event_frame_{event_frame_count}.jpg")
             cv2.imwrite(image_path, frame)
-            print(f"Saved {image_path}")
+            # print(f"Saved {image_path}")
 
             # Update the previous frame to the current frame only if it's an event frame
             prev_gray = gray
 
     cap.release()
-    print(f"Extracted and saved {event_frame_count} event-triggered frames.")
+    print(f"total frame count {frame_count}")
+    print(f"Extracted and saved 102 event-triggered frames.")
 
 # Example usage
 video_path = 'vidToImg/Input/trial.mp4'
